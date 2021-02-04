@@ -13,58 +13,52 @@ body{
     position:fixed;
     height: 100%;
     transition: all .2s linear;
-    left: -300px;
+    left: -400px;
 
     /*top: -70px;*/
 }
 
 #menu nav ul{
     list-style-type: none;
-    margin: 1vw 0vw;
-    padding: 1.5vw;
+    margin: 20vw 0vw;
+    padding: 12vw 12vw;
     margin-right: auto;
 }
 #menu nav ul li{
     border-bottom: solid gray 1px;
-    padding: 2vw 0vw;
+    padding: 8vw  0vw;
+
 }
 #menu nav ul li a{
     text-decoration: none;
     color: white;
 }
-#iconMenu{
-    height: 4.5vw;
-    width: 4.5vw;
-    margin: 0.1vw;
+#iconMenu {
+    height: 12vw;
+    width: 12vw;
+    margin: 0;
+    padding: 0;
+    left: -1.5vw;
+    position: relative;
     z-index: 1;
-
 }
 
+
 #btnMenu{
-    height: 4.5vw;
-    width: 4.5vw;
-    margin: 1vw;
+    height: 12vw;
+    width: 12vw;
+    position: absolute;
     border:none; 
+    border-radius: 50%;
     background-color: none;
     outline: unset;
+    display: block;
+
 }
 
 #menu.open{
-
-    transform: translateX(300px);    
+    transform: translateX(400px);    
 }
-#btnMenu.open>svg>path{
-
-    fill: white;
-}
-
-#icone{
-    cursor:pointer;
-    position: absolute;
-    z-index: 1;
-}
-
-
 /*
 #menu:hover  {
     top: 1px;
