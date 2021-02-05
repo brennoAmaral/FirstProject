@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Source Code Pro', monospace;
-    font-size: 110%;
+    font-size: 130%;
     color: white;
     font-weight: 700;
     /*background-color: #1ed760;*/
@@ -22,7 +22,7 @@ section{
     display: none;
 }
 
-@media (max-width:600px){
+@media (max-width:1367px){
     .notDesktop{
         
         left: -3000000vw;
@@ -83,14 +83,20 @@ section{
 
 
 
-@media (min-width:601px) {
+@media (min-width:1368px) {
     .notMobile{
         display: none;
         
     }
-    img#icon{
-        src:none;
+
+    .green{
+        font-weight: bolder;
+        color: #1ed760;
+        font-size:140%;
     }
+
+
+
     #menu {
         margin: 0;
         background-color:black; 
@@ -112,24 +118,21 @@ section{
         align-self: center;
         font-family: 'Source Code Pro', monospace;
         font-size: 115%;
-        margin-left: 2vw;
+        margin: 0 0 0 2vw; 
+        /*padding-top: 0.5%;*/
     }
-    .green{
-        font-weight: bolder;
-        color: #1ed760;
-        font-size:140%;
-    }
+    
     #menu nav{
         display: block;
         margin-left: auto;
+
     }
 
     #menu nav ul{
         list-style-type: none;
-        margin:0 ;
-        padding: 2vw 0vw 2vw 2vw ;
-        align-self: auto;
-        line-height: 1;
+        padding-top: 2%;
+        padding-bottom: 1%;
+        
         
     }
     #menu nav ul li{
@@ -142,18 +145,11 @@ section{
         text-decoration: none;
         color: white;
     }
-    
-    /*
-    #menu:hover  {
-        top: 1px;
-    }
-    */
-    
+        
     #menu a:hover{
         color: #1ed760;
     }
+
+
     
-    #Hora{
-        margin-top: 70px;
-    }
 }
