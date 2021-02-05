@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Source Code Pro', monospace;
-    font-size: 20px;
+    font-size: 110%;
     color: white;
     font-weight: 700;
     /*background-color: #1ed760;*/
@@ -18,6 +18,9 @@ section{
     color: #1ed760;
 }
 
+.exclude{
+    display: none;
+}
 
 @media (max-width:600px){
     .notDesktop{
@@ -56,7 +59,7 @@ section{
     
     }
     #Hora{
-        margin-top: 70px;;
+        margin-top: 70px;
     }
     #menu.open{
         transform: translateX(400px);    
@@ -80,7 +83,6 @@ section{
 
 
 
-
 @media (min-width:601px) {
     .notMobile{
         display: none;
@@ -91,30 +93,47 @@ section{
     }
     #menu {
         margin: 0;
-        background-color:black ; 
-        position:fixed;
+        background-color:black; 
         width: 100%;
-        transition: all .2s linear;
         z-index: 1;
         display: flex;
-        flex-wrap: nowrap;  
-    
+        flex-wrap: nowrap;
+        flex-direction: row;
         /*top: -70px;*/
     }
+    
     #icon{
         width: 50px;
         height: 55px;
-        margin-top: 0.5vw;
-        margin-left: 0.5vw;
+        margin: 1vw;
     }
+    #menu p{
+        display:block;
+        align-self: center;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 115%;
+        margin-left: 2vw;
+    }
+    .green{
+        font-weight: bolder;
+        color: #1ed760;
+        font-size:140%;
+    }
+    #menu nav{
+        display: block;
+        margin-left: auto;
+    }
+
     #menu nav ul{
         list-style-type: none;
-        margin: 0;
-        padding: 1.5vw 0 1.5vw 0;
-        margin-right: auto;
+        margin:0 ;
+        padding: 2vw 0vw 2vw 2vw ;
+        align-self: auto;
+        line-height: 1;
+        
     }
     #menu nav ul li{
-        padding: 0 3vw 0 3vw;
+        padding: 0 1vw;
         display: inline;
         border-right: solid white 1px;
         
@@ -135,6 +154,6 @@ section{
     }
     
     #Hora{
-        margin-top: 70px;;
+        margin-top: 70px;
     }
 }
